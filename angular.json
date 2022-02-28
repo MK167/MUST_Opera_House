@@ -28,25 +28,53 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/manifest.webmanifest"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/assets/resources/css/font-awesome.css",
+              "src/assets/resources/css/bootstrap.css",
+              "src/assets/resources/css/animate.css",
+              "src/assets/resources/css/player.css",
+              "src/assets/resources/css/bootstrap-formhelpers.css",
+              "src/assets/resources/css/chosen.css",
+              "src/assets/resources/css/style.css"
             ],
-            "scripts": []
+            "scripts": [
+                "node_modules/jquery/dist/jquery.js",
+                "node_modules/bootstrap/dist/js/bootstrap.js",
+                "node_modules/popper.js/dist/umd/popper.min.js",
+                "src/assets/resources/js/chosen.jquery.js",
+                "src/assets/resources/js/wow.js",
+                "src/assets/resources/js/html5media.min.js",
+                "src/assets/resources/js/player.js",
+                "src/assets/resources/js/youtube-embed.js",
+                "src/assets/resources/js/modernizr.custom.js",
+                "src/assets/resources/js/jquery.flexslider.min.js",
+                "src/assets/resources/js/imagesloaded.pkgd.min.js",
+                "src/assets/resources/js/masonry.pkgd.min.js",
+                "src/assets/resources/js/cbpGridGallery.js",
+                "src/assets/resources/js/bootstrap-formhelpers.js",
+                "src/assets/resources/js/magnify.js",
+                "src/assets/resources/js/custom.js"
+            ],
+            "serviceWorker": true,
+            "ngswConfigPath": "ngsw-config.json"
           },
           "configurations": {
             "production": {
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "5000kb",
+                  "maximumError": "112mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "200kb",
+                  "maximumError": "4000kb"
                 }
               ],
               "fileReplacements": [
@@ -96,12 +124,31 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/manifest.webmanifest"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.js",
+              "node_modules/bootstrap/dist/js/bootstrap.js",
+              "node_modules/popper.js/dist/umd/popper.min.js",
+              "src/assets/resources/js/chosen.jquery.js",
+              "src/assets/resources/js/wow.js",
+              "src/assets/resources/js/html5media.min.js",
+              "src/assets/resources/js/player.js",
+              "src/assets/resources/js/youtube-embed.js",
+              "src/assets/resources/js/modernizr.custom.js",
+              "src/assets/resources/js/jquery.flexslider.min.js",
+              "src/assets/resources/js/imagesloaded.pkgd.min.js",
+              "src/assets/resources/js/masonry.pkgd.min.js",
+              "src/assets/resources/js/cbpGridGallery.js",
+              "src/assets/resources/js/bootstrap-formhelpers.js",
+              "src/assets/resources/js/magnify.js",
+              "src/assets/resources/js/custom.js"
+            ]
           }
         }
       }
