@@ -16,6 +16,8 @@ import { ContactComponent } from './Components/contact/contact.component';
 import { SponsersComponent } from './Components/sponsers/sponsers.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { TEXTEditorPageComponent } from './DashboardComponents/texteditor-page/texteditor-page.component';
+import { NgxEditorModule } from 'ngx-editor';
 
 @NgModule({
   declarations: [
@@ -30,16 +32,19 @@ import { environment } from '../environments/environment';
     NewsComponent,
     TESTIMONIALSComponent,
     ContactComponent,
-    SponsersComponent
+    SponsersComponent,
+    TEXTEditorPageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    NgxEditorModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production,
       // Register the ServiceWorker as soon as the app is stable
       // or after 30 seconds (whichever comes first).
-      registrationStrategy: 'registerWhenStable:30000'
+      registrationStrategy: 'registerWhenStable:30000',
+      // Registering EJ2 Rich Text Editor Module
     })
   ],
   providers: [],
