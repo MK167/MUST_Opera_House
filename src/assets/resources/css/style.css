@@ -104,7 +104,7 @@ a:focus,a:hover {
     font-size: 40px;
     font-weight: 700;
     letter-spacing: 0px;
-    color: #1C5B87;
+    color: #002E5c;
     margin-bottom: 10px;
     line-height: 40px;
 }
@@ -183,10 +183,10 @@ a:focus,a:hover {
     transition: all .5s ease;
 }
 #header ul.nav li .nav-link.active{
-    color: #1C5B87;
+    color: #002E5c;
 }
 #header ul.nav li a:hover{
-    color: #1C5B87;
+    color: #002E5c;
 }
 #header .nav > li ul.child-item{
     width: -webkit-max-content;
@@ -222,7 +222,7 @@ a:focus,a:hover {
     text-transform: capitalize;
 }
 #header .nav > li ul.child-item > li a:hover{
-    color:#1C5B87;
+    color:#002E5c;
 }
 #header .search-bar form{
     position: absolute;
@@ -387,7 +387,7 @@ a:focus,a:hover {
     display:block;
 }
 .header_items > div:hover i{
-    color: #1C5B87;
+    color: #002E5c;
 }
 .card_count{
     width: 20px;
@@ -397,7 +397,7 @@ a:focus,a:hover {
     top: -5px;
     right: -9px;
     color: #fff;
-    background-color: #1C5B87;
+    background-color: #002E5c;
     padding: 3px;
     border-radius: 50%;
     display: -webkit-box;
@@ -434,7 +434,7 @@ a:focus,a:hover {
     transition: all .5s ease;
 }
 .header_items svg:hover path{
-    fill: #1C5B87;
+    fill: #002E5c;
 }
 .search_icon,.shop_icon{
     margin-right: 20px;
@@ -483,7 +483,7 @@ a:focus,a:hover {
     z-index: 9;
 }
 .header-title h1 span{
-    color: #1C5B87;
+    color: #002E5c;
 }
 /*--------------------*/
 /* HEADER END */
@@ -556,7 +556,7 @@ a:focus,a:hover {
     font-size: 15px;
     color: #fff;
     padding: 24px 13px 24px 20px;
-    border: 1px solid #1C5B87;
+    border: 1px solid #002E5c;
     border-radius: 10px;
     -webkit-transition: all .5s ease;
     -o-transition: all .5s ease;
@@ -564,8 +564,8 @@ a:focus,a:hover {
     transition: all .5s ease;
 }
 .cta a:hover{
-    border-color:#1C5B87;
-    background-color:#1C5B87;
+    border-color:#002E5c;
+    background-color:#002E5c;
 }
 .home #on-tour{
     background-color: rgba(15, 15, 15,0.1);
@@ -701,11 +701,11 @@ a:focus,a:hover {
     color: #fff;
 }
 .row.ticket:hover .day_num{
-    border-color:#1C5B87;
+    border-color:#002E5c;
 }
 .row.ticket:hover .buy a{
-    background-color: #1C5B87;
-    border-color: #1C5B87;
+    background-color: #002E5c;
+    border-color: #002E5c;
 }
 .buy a:hover{
     text-decoration: none;
@@ -885,7 +885,7 @@ a:focus,a:hover {
     -o-transform: scale(1.3, 1.3);
     transform: scale(1.3, 1.3);
     border: none;
-    background-color: #1C5B87;
+    background-color: #002E5c;
 }
 #popup-container ul li.active{
     -webkit-transform: scale(1.3, 1.3);
@@ -894,7 +894,7 @@ a:focus,a:hover {
     -o-transform: scale(1.3, 1.3);
     transform: scale(1.3, 1.3);
     border: none;
-    background-color: #1C5B87;
+    background-color: #002E5c;
 }
 .banner_2 {
     overflow: hidden;
@@ -1122,11 +1122,11 @@ a.anim_border::after {
     justify-content: center;
 }
 .news_content .day_num *{
-    color: #1C5B87;
+    color: #002E5c;
     margin: 0;
 }
 .news_content .day_num div{
-    border-right: 3px solid #1C5B87;
+    border-right: 3px solid #002E5c;
     padding-right: 10px;
     margin-right: 10px;
     margin-left: 4px;
@@ -1187,10 +1187,10 @@ a.anim_border::after {
     opacity: 1;
 }
 .news_content:hover h2{
-    color: #1C5B87;
+    color: #002E5c;
 }
 .news_content:hover .cta a{
-    background-color: #1C5B87;
+    background-color: #002E5c;
 }
 .news_content .day_num div p{
     font-size: 14px;
@@ -1473,7 +1473,7 @@ a.anim_border::after {
 }
 .form form input:focus,.form form textarea:focus{
     background-color: rgba(255, 255, 255, 0.2);
-    border: 1px solid #1C5B87;
+    border: 1px solid #002E5c;
     outline: 0;
     box-shadow: none;
     color:#fff;
@@ -1502,13 +1502,13 @@ a.anim_border::after {
     box-shadow: 0 0 0 0;
 }
 .form .btn-primary:hover{
-    background-color: #1C5B87;
-    border-color: #1C5B87;
+    background-color: #002E5c;
+    border-color: #002E5c;
 }
 
 .form .btn-primary:active{
-    background-color: #1C5B87!important;
-    border-color: #1C5B87!important;
+    background-color: #002E5c!important;
+    border-color: #002E5c!important;
 }
 
 .form input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -1681,7 +1681,7 @@ a.anim_border::after {
     -webkit-transition: all 0.5s ease-out 0s;
 }
 .info p:hover a{
-    color: #1C5B87;
+    color: #002E5c;
     text-decoration: none;
     -o-transition: all 0.5s ease-out 0s;
     -moz-transition: all 0.5s ease-out 0s;
@@ -1732,7 +1732,7 @@ a.anim_border::after {
     -webkit-transition: all 0.5s ease-out 0s;
 }
 .folow ul li a:hover{
-    background-color:#1C5B87;
+    background-color:#002E5c;
     text-decoration:none;
     -o-transition: all 0.5s ease-out 0s;
     -moz-transition: all 0.5s ease-out 0s;
@@ -1756,7 +1756,7 @@ a.anim_border::after {
     -webkit-transition: all 0.5s ease-out 0s;
 }
 .footer .day_num:hover *{
-    color: #1C5B87;
+    color: #002E5c;
     -o-transition: all 0.5s ease-out 0s;
     -moz-transition: all 0.5s ease-out 0s;
     transition: all 0.5s ease-out 0s;
@@ -2131,10 +2131,10 @@ a.anim_border::after {
     background-image: radial-gradient(circle closest-side, #fff calc(100% - 0.5px), transparent 100%);
 }
 .playlist .music_line:hover .player-grig {
-    background-image: -webkit-radial-gradient(circle closest-side, #1C5B87 -webkit-calc(100% - 0.5px), transparent 100%);
-    background-image: -moz-radial-gradient(circle closest-side, #1C5B87 -moz-calc(100% - 0.5px), transparent 100%);
-    background-image: -o-radial-gradient(circle closest-side, #1C5B87 calc(100% - 0.5px), transparent 100%);
-    background-image: radial-gradient(circle closest-side, #1C5B87 calc(100% - 0.5px), transparent 100%);
+    background-image: -webkit-radial-gradient(circle closest-side, #002E5c -webkit-calc(100% - 0.5px), transparent 100%);
+    background-image: -moz-radial-gradient(circle closest-side, #002E5c -moz-calc(100% - 0.5px), transparent 100%);
+    background-image: -o-radial-gradient(circle closest-side, #002E5c calc(100% - 0.5px), transparent 100%);
+    background-image: radial-gradient(circle closest-side, #002E5c calc(100% - 0.5px), transparent 100%);
 }
 .playlist .plyr__time{
     -webkit-box-flex: 0;
@@ -2164,7 +2164,7 @@ a.anim_border::after {
 }
 .play-pause svg:hover polygon,
 .play-pause svg:hover path{
-    fill:#1C5B87;
+    fill:#002E5c;
 }
 #discography-post .plyr .plyr__volume input[type=range]{
     top: 3px;
@@ -2229,17 +2229,17 @@ body.firefox .plyr .plyr__volume input[type=range]{
     -webkit-transition: all 0.5s ease-out 0s;
 }
 .playlist .music_line:hover .plyr__time+.plyr__time{
-    color:#1C5B87;
+    color:#002E5c;
 }
 .playlist .music_line:hover > span,.playlist .music_line:hover .plyr__controls button svg{
-    color:#1C5B87;
+    color:#002E5c;
 }
 .playlist .music_line:hover .plyr__time:after{
-    color:#1C5B87;
+    color:#002E5c;
 }
 .playlist .music_line:hover .play-pause svg polygon,
 .playlist .music_line:hover .play-pause svg path{
-    fill:#1C5B87;
+    fill:#002E5c;
 }
 .playlist{
     margin-top: 30px;
@@ -2281,7 +2281,7 @@ body.firefox .plyr .plyr__volume input[type=range]{
     margin-bottom: 0;
 }
 .music_date a:hover *{
-    color: #1C5B87;
+    color: #002E5c;
 }
 .music_after{
     margin-bottom: 16px!important;
@@ -2299,7 +2299,7 @@ body.firefox .plyr .plyr__volume input[type=range]{
     -webkit-transition: all 0.5s ease-out 0s;
 }
 .music_after a:hover{
-    color: #1C5B87;
+    color: #002E5c;
 }
 .music_shop{
     margin-bottom: 0;
@@ -2332,7 +2332,7 @@ body.firefox .plyr .plyr__volume input[type=range]{
     justify-content: center;
     font-size: 15px;
     color: #fff;
-    border: 1px solid #1C5B87;
+    border: 1px solid #002E5c;
     width: 127px;
     height: 50px;
     margin: 0;
@@ -2385,7 +2385,7 @@ body.firefox .plyr .plyr__volume input[type=range]{
     -webkit-transition: all 0.5s ease-out 0s;
 }
 .social-icons a:hover {
-    color:#1C5B87;
+    color:#002E5c;
 }
 /* =================================================  */
 /* MUSIC SINGLE ALBUM END */
@@ -2689,7 +2689,7 @@ body.all-events #on-tour{
     -webkit-transition: all 0.3s ease-out 0s;
 }
 #videos .w-100:hover .video-banner-name h2{
-    color: #1C5B87;
+    color: #002E5c;
 }
 .video-banner-name p{
     color:#888;
@@ -3119,7 +3119,7 @@ p.post-quote:before{
     -webkit-transition: all 0.3s ease-out 0s;
 }
 .reply:hover{
-    color:#1C5B87;
+    color:#002E5c;
 }
 .reply i{
     margin-left: 10px;
@@ -3236,7 +3236,7 @@ p.post-quote:before{
     padding: 3px 0px;
 }
 .categories-line:hover{
-    color: #1C5B87;
+    color: #002E5c;
 }
 .blog-recent-post{
     margin-top:30px;
@@ -3255,7 +3255,7 @@ p.post-quote:before{
     clear: both;
 }
 .resent-posts-line:hover .recent-post-name h3{
-    color: #1C5B87;
+    color: #002E5c;
 }
 .recent-post-image{
     width: 90px;
@@ -3332,7 +3332,7 @@ p.post-quote:before{
     -webkit-transition: all 0.3s ease-out 0s;
 }
 .standard-blog-title:hover h2{
-    color: #1C5B87;
+    color: #002E5c;
 }
 
 .post-category{
@@ -3342,10 +3342,10 @@ p.post-quote:before{
     -webkit-transition: all 0.3s ease-out 0s;
 }
 .categories-name:hover span{
-    color: #1C5B87;
+    color: #002E5c;
 }
 .categories-name:hover{
-    color: #1C5B87;
+    color: #002E5c;
 }
 .post-cta{
     text-align:center;
@@ -3637,7 +3637,7 @@ body.contact-us-page #contact-us{
     margin-bottom: 5px;
 }
 .contact-adress > a:hover{
-    color: #1C5B87;
+    color: #002E5c;
 }
 .contact-adress > a i,
 .contact-adress > p i{
@@ -3648,7 +3648,7 @@ body.contact-us-page #contact-us{
     margin-bottom: 20px;
 }
 body.contact-us-page .form .btn-primary{
-    border-color:#1C5B87;
+    border-color:#002E5c;
 }
 
 body.contact-us-page .form textarea{
@@ -3758,7 +3758,7 @@ body.contact-us-page .form textarea:-moz-placeholder { /* Firefox 18- */
     -webkit-transition: all 0.3s ease-out 0s;
 }
 .cart-description a:hover h2{
-    color: #1C5B87;
+    color: #002E5c;
 }
 .cart-description p{
     font-size: 18px;
@@ -3809,7 +3809,7 @@ body.contact-us-page .form textarea:-moz-placeholder { /* Firefox 18- */
     -webkit-transition: all 0.3s ease-out 0s;
 }
 .delete-product svg:hover path{
-    fill: #1C5B87;
+    fill: #002E5c;
 }
 .order-coupon:after{
     content:'';
@@ -3878,14 +3878,14 @@ body.contact-us-page .form textarea:-moz-placeholder { /* Firefox 18- */
 }
 .coupon-form form input:focus{
     outline: 0;
-    border-color: #1C5B87;
+    border-color: #002E5c;
 }
 .coupon-form form button{
     width:27%;
     height: 100%;
     cursor: pointer;
     background-color: rgb(42, 196, 183);
-    border: 2px solid #1C5B87;
+    border: 2px solid #002E5c;
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
     color: #fff;
@@ -4936,7 +4936,7 @@ span.sale:after{
     color: #656565;
 }
 .privacy-policy a:hover{
-    color:#1C5B87;
+    color:#002E5c;
 }
 #checkout-list table.table {
     border-collapse: separate;
@@ -10113,7 +10113,7 @@ body.net #blog-post .form h2{
     font-weight: 200;
 }
 body.net .coupon-form form{
-    border:1px solid #1C5B87;
+    border:1px solid #002E5c;
     border-radius: 5px;
 }
 body.net .coupon-form form input:focus{

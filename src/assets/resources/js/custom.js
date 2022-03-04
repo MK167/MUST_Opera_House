@@ -24,7 +24,7 @@
 
  **/
 
-"use strict"; 
+"use strict";
 //Variable for caching
 var windowElement = jQuery(window);
 var body = jQuery("body");
@@ -481,84 +481,84 @@ jQuery(function ($) {
 
 
     // This for demonstration need send ajax call to get new post
-    $('.more').on("click", function(){
+    // $('.more').on("click", function(){
 
-        var html = '<div class="grid-item grid-item--width1" >' +
-            '<a href="11-Blog-Single-Post.html ">\n' +
-            '                <div class="grid-item-img">\n' +
-            '                    <img src="resources/images/13_blog_mansory.png" alt="Andre Benz"/>\n' +
-            '                </div>\n' +
-            '                <div class="grid-item-content">\n' +
-            '                    <div class="g_t">\n' +
-            '                        <h3>NEW DJ</h3>\n' +
-            '                        <p>\n' +
-            '                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.\n' +
-            '                            Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s,\n' +
-            '                            when an unknown printer took a galley of type and scrambled it to make a type specimen\n' +
-            '                        </p>\n' +
-            '                    </div>\n' +
-            '                </div>\n' +
-            '            </a>' +
-            '</div>'
-            + '<div class="grid-item grid-item--width2">' +
-            '<a href="11-Blog-Single-Post.html ">\n' +
-            '                <div class="grid-item-img">\n' +
-            '                    <img src="resources/images/hatim-belyamani.jpg" alt="Karim Boubker"/>\n' +
-            '                </div>\n' +
-            '                <div class="grid-item-content">\n' +
-            '                    <div class="g_t">\n' +
-            '                        <h3>OUR TOUR</h3>\n' +
-            '                        <p>\n' +
-            '                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.\n' +
-            '                            Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s,\n' +
-            '                            when an unknown printer took a galley of type and scrambled it to make a type specimen\n' +
-            '                        </p>\n' +
-            '                    </div>\n' +
-            '                </div>\n' +
-            '            </a>' +
-            '</div>'
-            + '<div class="grid-item grid-item--width3">' +
-            '<a href="11-Blog-Single-Post.html ">\n' +
-            '                <div class="grid-item-content">\n' +
-            '                    <div class="g_t">\n' +
-            '                        <h3>DRUM FESTIVAL</h3>\n' +
-            '                        <p>\n' +
-            '                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.\n' +
-            '                            Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s,\n' +
-            '                            when an unknown printer took a galley of type and scrambled it to make a type specimen\n' +
-            '                        </p>\n' +
-            '                    </div>\n' +
-            '                </div>\n' +
-            '                <div class="grid-item-img">\n' +
-            '                    <img src="resources/images/samuel-fyfe.jpg" alt="Samuel Fyfe">\n' +
-            '                </div>\n' +
-            '            </a>' +
-            '</div>'
-            +'<div class="grid-item grid-item--width4">' +
-            '<a href="11-Blog-Single-Post.html ">\n' +
-            '                <div class="grid-item-img">\n' +
-            '                    <img src="resources/images/mink-mingle.jpg" alt="">\n' +
-            '                </div>\n' +
-            '                <div class="grid-item-content">\n' +
-            '                    <div class="g_t">\n' +
-            '                        <h3>DARK SIDE</h3>\n' +
-            '                        <p>\n' +
-            '                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.\n' +
-            '                            Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s,\n' +
-            '                            when an unknown printer took a galley of type and scrambled it to make a type specimen\n' +
-            '                        </p>\n' +
-            '                    </div>\n' +
-            '                </div>\n' +
-            '            </a>' +
-            '</div>';
-        $("div.grid").append(html);
+    //     var html = '<div class="grid-item grid-item--width1" >' +
+    //         '<a href="11-Blog-Single-Post.html ">\n' +
+    //         '                <div class="grid-item-img">\n' +
+    //         '                    <img src="resources/images/13_blog_mansory.png" alt="Andre Benz"/>\n' +
+    //         '                </div>\n' +
+    //         '                <div class="grid-item-content">\n' +
+    //         '                    <div class="g_t">\n' +
+    //         '                        <h3>NEW DJ</h3>\n' +
+    //         '                        <p>\n' +
+    //         '                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.\n' +
+    //         '                            Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s,\n' +
+    //         '                            when an unknown printer took a galley of type and scrambled it to make a type specimen\n' +
+    //         '                        </p>\n' +
+    //         '                    </div>\n' +
+    //         '                </div>\n' +
+    //         '            </a>' +
+    //         '</div>'
+    //         + '<div class="grid-item grid-item--width2">' +
+    //         '<a href="11-Blog-Single-Post.html ">\n' +
+    //         '                <div class="grid-item-img">\n' +
+    //         '                    <img src="resources/images/hatim-belyamani.jpg" alt="Karim Boubker"/>\n' +
+    //         '                </div>\n' +
+    //         '                <div class="grid-item-content">\n' +
+    //         '                    <div class="g_t">\n' +
+    //         '                        <h3>OUR TOUR</h3>\n' +
+    //         '                        <p>\n' +
+    //         '                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.\n' +
+    //         '                            Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s,\n' +
+    //         '                            when an unknown printer took a galley of type and scrambled it to make a type specimen\n' +
+    //         '                        </p>\n' +
+    //         '                    </div>\n' +
+    //         '                </div>\n' +
+    //         '            </a>' +
+    //         '</div>'
+    //         + '<div class="grid-item grid-item--width3">' +
+    //         '<a href="11-Blog-Single-Post.html ">\n' +
+    //         '                <div class="grid-item-content">\n' +
+    //         '                    <div class="g_t">\n' +
+    //         '                        <h3>DRUM FESTIVAL</h3>\n' +
+    //         '                        <p>\n' +
+    //         '                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.\n' +
+    //         '                            Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s,\n' +
+    //         '                            when an unknown printer took a galley of type and scrambled it to make a type specimen\n' +
+    //         '                        </p>\n' +
+    //         '                    </div>\n' +
+    //         '                </div>\n' +
+    //         '                <div class="grid-item-img">\n' +
+    //         '                    <img src="resources/images/samuel-fyfe.jpg" alt="Samuel Fyfe">\n' +
+    //         '                </div>\n' +
+    //         '            </a>' +
+    //         '</div>'
+    //         +'<div class="grid-item grid-item--width4">' +
+    //         '<a href="11-Blog-Single-Post.html ">\n' +
+    //         '                <div class="grid-item-img">\n' +
+    //         '                    <img src="resources/images/mink-mingle.jpg" alt="">\n' +
+    //         '                </div>\n' +
+    //         '                <div class="grid-item-content">\n' +
+    //         '                    <div class="g_t">\n' +
+    //         '                        <h3>DARK SIDE</h3>\n' +
+    //         '                        <p>\n' +
+    //         '                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.\n' +
+    //         '                            Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s,\n' +
+    //         '                            when an unknown printer took a galley of type and scrambled it to make a type specimen\n' +
+    //         '                        </p>\n' +
+    //         '                    </div>\n' +
+    //         '                </div>\n' +
+    //         '            </a>' +
+    //         '</div>';
+    //     $("div.grid").append(html);
 
-        window.msnry = new Masonry( '.grid', {
-            columnWidth: '.grid-sizer',
-            percentPosition: true
-        });
+    //     window.msnry = new Masonry( '.grid', {
+    //         columnWidth: '.grid-sizer',
+    //         percentPosition: true
+    //     });
 
-    });
+    // });
 
     /* ----------------------------------------------------------- */
     /*  13.CART NUMBER PICKER
@@ -814,11 +814,3 @@ jQuery(function ($) {
 
 });
 
-/* ----------------------------------------------------------- */
-/*  20.PRE LOADER
-/* ----------------------------------------------------------- */
-windowElement.on('load', function(){
-    $('#preloader').fadeOut('slow',function(){
-        $(this).remove();
-    });
-});
