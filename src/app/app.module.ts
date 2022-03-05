@@ -4,7 +4,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './Components/home/home.component';
 import { FooterComponent } from './CoreComponents/footer/footer.component';
-import { HeaderComponent } from './CoreComponents/header/header.component';
 import { ALBUMComponent } from './Components/album/album.component';
 import { TicketComponent } from './Components/ticket/ticket.component';
 import { GALLERYComponent } from './Components/gallery/gallery.component';
@@ -34,13 +33,13 @@ import { AboutComponent } from './Components/about/about.component';
 import { SliderComponent } from './Shared/Components/slider/slider.component';
 import { LoaderComponent } from './Shared/Loader/loader/loader.component';
 import { AboutUSComponent } from './Components/Pages/about-us/about-us.component';
+import { LightboxModule } from 'ngx-lightbox';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     FooterComponent,
-    HeaderComponent,
     ALBUMComponent,
     TicketComponent,
     GALLERYComponent,
@@ -71,6 +70,7 @@ import { AboutUSComponent } from './Components/Pages/about-us/about-us.component
     RouterModule,
     AppRoutingModule,
     NgxEditorModule,
+    LightboxModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production,
       // Register the ServiceWorker as soon as the app is stable

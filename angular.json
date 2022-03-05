@@ -39,7 +39,8 @@
               "src/assets/resources/css/animate.css",
               "src/assets/resources/css/player.css",
               "src/assets/resources/css/bootstrap-formhelpers.css",
-              "src/assets/resources/css/chosen.css"
+              "src/assets/resources/css/chosen.css",
+              "node_modules/ngx-lightbox/lightbox.css"
               ],
             "scripts": [
                 "node_modules/jquery/dist/jquery.js",
@@ -146,7 +147,8 @@
               "src/assets/resources/js/cbpGridGallery.js",
               "src/assets/resources/js/bootstrap-formhelpers.js",
               "src/assets/resources/js/magnify.js",
-              "src/assets/resources/js/custom.js"
+              "src/assets/resources/js/custom.js",
+              "src/assets/resources/js/popup.js"
             ]
           }
         }

@@ -7,6 +7,7 @@ import { NewsDetailsComponent } from './Components/Pages/all-news/news-details/n
 import { GalleryDetailsComponent } from './Components/Pages/all-gallery/gallery-details/gallery-details.component';
 import { AboutUSComponent } from './Components/Pages/about-us/about-us.component';
 import { ContactComponent } from './Components/contact/contact.component';
+import { AllNewsComponent } from './Components/Pages/all-news/all-news.component';
 
 const routes: Routes = [
   {
@@ -31,7 +32,7 @@ const routes: Routes = [
 
   //News
   {
-    path: 'All-News', component: NewsDetailsComponent
+    path: 'All-News', component: AllNewsComponent
   },
   {
     path: 'news-Details', component: NewsDetailsComponent
@@ -40,9 +41,6 @@ const routes: Routes = [
   //Contact US
   {
     path: 'Contact-US', component: ContactComponent
-  },
-  {
-    path: 'news-Details', component: NewsDetailsComponent
   },
 
 
@@ -69,7 +67,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {useHash: true})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

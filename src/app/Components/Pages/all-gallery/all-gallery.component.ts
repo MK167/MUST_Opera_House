@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
 @Component({
   selector: 'app-all-gallery',
   templateUrl: './all-gallery.component.html',
@@ -10,6 +9,7 @@ export class AllGalleryComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
 }
