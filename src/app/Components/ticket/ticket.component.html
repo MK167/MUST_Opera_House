@@ -8,167 +8,28 @@
               <p>Explore and book all exclusive Events</p>
           </div>
       </div>
+
       <!-- TICKETS -->
       <div class="col tickets wow fadeInUpBig">
-          <div class="row ticket">
+          <div class="row ticket" *ngFor="let item of TicketsDTO">
               <div class="col">
                   <div class="row">
-                      <a class="col-10 ticket-link" href="https://www.ticketsmarche.com/tickets/buy-tickets-bahaa-sultan.html">
+                      <a class="col-10 ticket-link" href={{item.description}}>
                           <div class="day">
                               <div class="day_num">
-                                  <span>04</span>
+                                  <!-- <span>Data</span> -->
                                   <div>
-                                      <p>Mar</p>
-                                      <p>2022</p>
+                                      <p>{{item.eventDate | date : 'yyyy-MM-dd'}}</p>
+                                      <!-- <p>2022</p> -->
                                   </div>
                               </div>
                           </div>
                           <div class="name">
-                              <p><span>MUST THEATER, 6th of October</span> // <span>Bahaa Sultan</span></p>
+                              <p><span></span> {{item.eventTitle}} // <span>{{item.speakerName}}</span></p>
                           </div>
                       </a>
                       <div class="col-2 buy">
-                          <a href="https://www.ticketsmarche.com/tickets/buy-tickets-bahaa-sultan.html" target="_blank">Buy Ticket</a>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <div class="row ticket">
-              <div class="col">
-                <div class="row">
-                  <a class="col-10 ticket-link" href="https://www.ticketsmarche.com/tickets/buy-tickets-bahaa-sultan.html">
-                      <div class="day">
-                          <div class="day_num">
-                              <span>04</span>
-                              <div>
-                                  <p>Mar</p>
-                                  <p>2022</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="name">
-                          <p><span>MUST THEATER, 6th of October</span> // <span>Bahaa Sultan</span></p>
-                      </div>
-                  </a>
-                  <div class="col-2 buy">
-                      <a href="https://www.ticketsmarche.com/tickets/buy-tickets-bahaa-sultan.html" target="_blank">Buy Ticket</a>
-                  </div>
-              </div>
-              </div>
-          </div>
-          <div class="row ticket">
-              <div class="col">
-                <div class="row">
-                  <a class="col-10 ticket-link" href="https://www.ticketsmarche.com/tickets/buy-tickets-bahaa-sultan.html">
-                      <div class="day">
-                          <div class="day_num">
-                              <span>04</span>
-                              <div>
-                                  <p>Mar</p>
-                                  <p>2022</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="name">
-                          <p><span>MUST THEATER, 6th of October</span> // <span>Bahaa Sultan</span></p>
-                      </div>
-                  </a>
-                  <div class="col-2 buy">
-                      <a href="https://www.ticketsmarche.com/tickets/buy-tickets-bahaa-sultan.html" target="_blank">Buy Ticket</a>
-                  </div>
-              </div>
-              </div>
-          </div>
-          <div class="row ticket">
-              <div class="col">
-                <div class="row">
-                  <a class="col-10 ticket-link" href="https://www.ticketsmarche.com/tickets/buy-tickets-bahaa-sultan.html">
-                      <div class="day">
-                          <div class="day_num">
-                              <span>04</span>
-                              <div>
-                                  <p>Mar</p>
-                                  <p>2022</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="name">
-                          <p><span>MUST THEATER, 6th of October</span> // <span>Bahaa Sultan</span></p>
-                      </div>
-                  </a>
-                  <div class="col-2 buy">
-                      <a href="https://www.ticketsmarche.com/tickets/buy-tickets-bahaa-sultan.html" target="_blank">Buy Ticket</a>
-                  </div>
-              </div>
-              </div>
-          </div>
-
-          <div class="row ticket">
-              <div class="col">
-                <div class="row">
-                  <a class="col-10 ticket-link" href="https://www.ticketsmarche.com/tickets/buy-tickets-bahaa-sultan.html">
-                      <div class="day">
-                          <div class="day_num">
-                              <span>04</span>
-                              <div>
-                                  <p>Mar</p>
-                                  <p>2022</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="name">
-                          <p><span>MUST THEATER, 6th of October</span> // <span>Bahaa Sultan</span></p>
-                      </div>
-                  </a>
-                  <div class="col-2 buy">
-                      <a href="https://www.ticketsmarche.com/tickets/buy-tickets-bahaa-sultan.html" target="_blank">Buy Ticket</a>
-                  </div>
-              </div>
-              </div>
-          </div>
-
-          <div class="row ticket">
-              <div class="col">
-                  <div class="row">
-                      <a class="col-10 ticket-link" href="05-Events-Single-Events.html">
-                          <div class="day">
-                              <div class="day_num">
-                                  <span>19</span>
-                                  <div>
-                                      <p>Dec</p>
-                                      <p>2020</p>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="name">
-                            <p><span>MUST THEATER, 6th of October</span> // <span>Omar Khairat</span></p>
-                          </div>
-                      </a>
-                      <div class="col-2 buy">
-                          <p>Sold Out!</p>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <div class="row ticket">
-              <div class="col">
-                  <div class="row">
-                      <a class="col-10 ticket-link" href="05-Events-Single-Events.html">
-                          <div class="day">
-                              <div class="day_num">
-                                  <span>19</span>
-                                  <div>
-                                      <p>Dec</p>
-                                      <p>2020</p>
-                                  </div>
-                              </div>
-                          </div>
-                          <div class="name">
-                            <p><span>MUST THEATER, 6th of October</span> // <span>Hani Shaker</span></p>
-                          </div>
-                      </a>
-                      <div class="col-2 buy">
-                          <p>Cancelled</p>
+                          <a href={{item.description}} target="_blank">Buy Ticket</a>
                       </div>
                   </div>
               </div>

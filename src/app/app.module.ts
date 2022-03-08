@@ -34,6 +34,8 @@ import { SliderComponent } from './Shared/Components/slider/slider.component';
 import { LoaderComponent } from './Shared/Loader/loader/loader.component';
 import { AboutUSComponent } from './Components/Pages/about-us/about-us.component';
 import { LightboxModule } from 'ngx-lightbox';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -70,6 +72,8 @@ import { LightboxModule } from 'ngx-lightbox';
     RouterModule,
     AppRoutingModule,
     NgxEditorModule,
+    HttpClientModule,
+    ReactiveFormsModule,
     LightboxModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production,

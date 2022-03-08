@@ -370,7 +370,6 @@ ul.email li a i {
 /** banner_main **/
 
 .banner_main {
-     background-image: url('../../MUST_Opera/Bg.png');
      width: 100%;
      background-size: cover;
      padding-top: 110px;
@@ -584,7 +583,7 @@ ul.email li a i {
 }
 
 .testomoniam_text {
-     background: #fff;
+     /* background: #fff; */
      padding: 40px 50px;
      border-radius: 70px;
      position: relative;
@@ -597,7 +596,7 @@ ul.email li a i {
      top: -64px;
      left: 0;
      right: 0;
-     background: url(../images/test.png);
+     /* background: url(../images/test.png); */
      width: 88px;
      height: 64px;
      margin: 0 auto;
