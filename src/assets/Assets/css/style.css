@@ -364,6 +364,7 @@ ul.email li a i {
      background-color: transparent;
      color: white;
      border: none;
+     width: 65%;
 }
 
 
@@ -374,12 +375,13 @@ ul.email li a i {
      background-size: cover;
      padding-top: 110px;
      position: relative;
-     /*  background-attachment: fixed;*/
+      /* background-attachment: fixed; */
      background-position: center;
 }
 
 .airmic {
      text-align: left;
+     margin-left: -100px;
 }
 
 .airmic h1 {

@@ -1,4 +1,6 @@
 import { NgModule } from '@angular/core';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -35,7 +37,10 @@ import { LoaderComponent } from './Shared/Loader/loader/loader.component';
 import { AboutUSComponent } from './Components/Pages/about-us/about-us.component';
 import { LightboxModule } from 'ngx-lightbox';
 import { ReactiveFormsModule } from '@angular/forms';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { NgxSpinnerModule } from 'ngx-spinner';
+import { LoaderInterceptor } from './Interceptors/interceptors/loader-interceptor.service';
+import { LoaderService } from './Shared/Loader/LoaderServices/loader.service';
 
 @NgModule({
   declarations: [
@@ -69,7 +74,10 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     RouterModule,
+    NgbModule,
+    NgxSpinnerModule,
     AppRoutingModule,
     NgxEditorModule,
     HttpClientModule,
@@ -83,7 +91,13 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
       // Registering EJ2 Rich Text Editor Module
     })
   ],
-  providers: [],
+  providers: [
+    LoaderService,
+    {
+    provide: HTTP_INTERCEPTORS,
+    useClass: LoaderInterceptor, multi: true
+  }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

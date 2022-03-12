@@ -28,7 +28,6 @@ export class TicketComponent implements OnInit {
       {
       this.TicketsDTO = data;
       this.eventDate = data[0].eventDate;
-      console.log('eventDate', this.eventDate);
       }
     );
   }

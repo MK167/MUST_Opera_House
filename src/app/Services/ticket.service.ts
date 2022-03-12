@@ -9,6 +9,7 @@ import { catchError, Observable, throwError } from 'rxjs';
 export class TicketService {
 
   readonly BaseUrl = environment.BaseUrl;
+
   apiUrlTable: string = 'EventSpeaker';
   headers = new HttpHeaders().set('Content-Type', 'application/json');
 
