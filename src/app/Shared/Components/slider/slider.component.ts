@@ -47,7 +47,7 @@ export class SliderComponent implements OnInit {
   GETDate() {
     this.SliderService.GetAll().subscribe(data=> {
       this.SLiderDTO = data;
-      console.log(this.SLiderDTO)
+      // console.log(this.SLiderDTO)
       // this.FullPath = `${this.ImagePath}${data[0].url}`;
       // this.hint = data[0].hint;
       // this.content = data[0].content;
