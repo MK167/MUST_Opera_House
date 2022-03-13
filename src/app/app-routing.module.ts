@@ -8,6 +8,7 @@ import { GalleryDetailsComponent } from './Components/Pages/all-gallery/gallery-
 import { AboutUSComponent } from './Components/Pages/about-us/about-us.component';
 import { ContactComponent } from './Components/contact/contact.component';
 import { AllNewsComponent } from './Components/Pages/all-news/all-news.component';
+import { ServicesComponent } from './Components/services/services.component';
 
 const routes: Routes = [
   {
@@ -20,6 +21,11 @@ const routes: Routes = [
   //About-us
   {
     path: 'about-us', component: AboutUSComponent
+  },
+
+  //All Services
+  {
+    path: 'services', component: ServicesComponent
   },
 
   //Gallery

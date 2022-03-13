@@ -41,6 +41,7 @@ import { HttpClient, HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { LoaderInterceptor } from './Interceptors/interceptors/loader-interceptor.service';
 import { LoaderService } from './Shared/Loader/LoaderServices/loader.service';
+import { ServicesComponent } from './Components/services/services.component';
 
 @NgModule({
   declarations: [
@@ -70,7 +71,8 @@ import { LoaderService } from './Shared/Loader/LoaderServices/loader.service';
     AboutComponent,
     SliderComponent,
     LoaderComponent,
-    AboutUSComponent
+    AboutUSComponent,
+    ServicesComponent
   ],
   imports: [
     BrowserModule,
