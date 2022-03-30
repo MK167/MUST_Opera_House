@@ -26,9 +26,6 @@ export class AboutComponent implements OnInit {
       this.AboutUSDTO = data;
       this.header = data[0].header;
       this.content = data[0].content;
-      // console.log('AboutUS', this.AboutUSDTO);
-      // console.log('header', this.header);
-      // console.log('AboutUS', this.content);
       }
     );
   }

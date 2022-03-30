@@ -23,6 +23,7 @@
     "@syncfusion/ej2-angular-richtexteditor": "^19.4.53",
     "bootstrap": "^4.6.1",
     "jquery": "^3.6.0",
+    "keypair": "^1.0.4",
     "lightbox2": "^2.11.3",
     "ng-bootstrap": "^0.46.0",
     "ngx-editor": "^12.2.1",

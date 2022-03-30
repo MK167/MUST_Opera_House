@@ -41,7 +41,7 @@ const routes: Routes = [
     path: 'All-News', component: AllNewsComponent
   },
   {
-    path: 'news-Details', component: NewsDetailsComponent
+    path: 'news-Details/:id', component: NewsDetailsComponent
   },
 
   //Contact US
