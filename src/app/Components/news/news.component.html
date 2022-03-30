@@ -11,7 +11,7 @@
       <div class="news">
           <div class="row">
               <div class="col wow fadeInUpBig" *ngFor="let item of News | slice:0:3; let i=index">
-                  <div class="bg_image" style="background-image: url(assets/MUST_Opera/G3.jpg)"></div>
+                  <div class="bg_image" style="background-image: url({{ImagePath}}/{{item?.image}})"></div>
                   <div class="overly"></div>
                   <div class="news_content news_content_1">
                       <h2>{{item.title}}</h2>

@@ -22,7 +22,7 @@ export class SliderComponent implements OnInit {
   SLiderDTO: SLiderDTO[] = [];
   current = 0;
 
-  readonly ImagePath = environment.ImagePathUrl; // If You Need Change Image Path Here in environment!
+  readonly ImagePath = environment.ImagePathUrlSlider; // If You Need Change Image Path Here in environment!
 
   content!: string;
   url!: string;
@@ -47,10 +47,6 @@ export class SliderComponent implements OnInit {
   GETDate() {
     this.SliderService.GetAll().subscribe(data=> {
       this.SLiderDTO = data;
-      // console.log(this.SLiderDTO)
-      // this.FullPath = `${this.ImagePath}${data[0].url}`;
-      // this.hint = data[0].hint;
-      // this.content = data[0].content;
     });
   }
 }

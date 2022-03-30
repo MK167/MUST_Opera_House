@@ -6,6 +6,8 @@ export const environment = {
   production: false,
   BaseUrl: 'https://localhost:44380/api/', // API Url in localhost
   ImagePathUrl: 'http://127.0.0.1:8887/', // Image path in Localhost
+  ImagePathUrlSlider: 'http://127.0.0.1:8887/Slider/IMG/Uploads/', // Image path in Localhost
+  ImagePathUrlNews: 'http://127.0.0.1:8887/News/Uploads/', // Image path in Localhost
   ImagePathUsersUrl: 'https://addmission.must.edu.eg/OperaImages/UserAvatar/', // Image path in Localhost
 };
 

@@ -50,6 +50,18 @@ export class NewsService {
     );
   }
 
+  //Get by ID
+  GetGetTopNews(Number: any): Observable<any> {
+    return this.httpClient.get(`${this.BaseUrl + this.apiUrlTable + "/GetTopNews"}/${Number}`).pipe(
+      catchError(this.handleError)
+    );
+  }
+
+  AddNewSlider(content: any, title: any, data: any): Observable<any> {
+    return this.httpClient.post(`${this.BaseUrl + this.apiUrlTable + '/AddNewSlider'}/${content}/${title}`, data).pipe(
+      catchError(this.handleError)
+    );
+  }
 
   // Handle API errors << You Can Add this Function as an Interceptor >>
   handleError(error: HttpErrorResponse) {
