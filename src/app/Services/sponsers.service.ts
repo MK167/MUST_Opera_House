@@ -6,10 +6,9 @@ import { environment } from 'src/environments/environment';
 @Injectable({
   providedIn: 'root'
 })
-export class AlbumService {
-
+export class SponsersService {
   readonly BaseUrl = environment.BaseUrl;
-  apiUrlTable: string = 'Album';
+  apiUrlTable: string = 'Sponser';
 
   headers = new HttpHeaders().set('Content-Type', 'application/json');
 
@@ -17,13 +16,7 @@ export class AlbumService {
 
   //Get All
   GetAll() : Observable<any> {
-    return this.httpClient.get(this.BaseUrl + this.apiUrlTable+ "/GetAllAlbum")
-    .pipe(
-      catchError(this.handleError)
-    );
-  }
-  GetAllAlbumWithImages() : Observable<any> {
-    return this.httpClient.get(this.BaseUrl + this.apiUrlTable+ "/GetAllAlbumWithImages")
+    return this.httpClient.get(this.BaseUrl + this.apiUrlTable+ "/GetAllSponser")
     .pipe(
       catchError(this.handleError)
     );
@@ -31,33 +24,35 @@ export class AlbumService {
 
   //Get by ID
   GetByID(id: any): Observable<any> {
-    return this.httpClient.get(`${this.BaseUrl + this.apiUrlTable + "/GetAlbumWithImagesByID"}/${id}`).pipe(
-      catchError(this.handleError)
-    );
-  }
-  GetImageByID(id: any): Observable<any> {
-    return this.httpClient.get(`${this.BaseUrl + this.apiUrlTable + "/GetAlbumByID"}/${id}`).pipe(
+    return this.httpClient.get(`${this.BaseUrl + this.apiUrlTable + "/GetSponserByID"}/${id}`).pipe(
       catchError(this.handleError)
     );
   }
 
   //Create / Add
   Create(data: any): Observable<any> {
-    return this.httpClient.post(this.BaseUrl  + this.apiUrlTable + "/AddAlbum" , data).pipe(
+    return this.httpClient.post(this.BaseUrl  + this.apiUrlTable + "/AddSponser" , data).pipe(
+      catchError(this.handleError)
+    );
+  }
+
+  //Create / Add
+  CreateAdd(data: any): Observable<any> {
+    return this.httpClient.post(this.BaseUrl  + this.apiUrlTable + "/AddNewSponser/name" , data).pipe(
       catchError(this.handleError)
     );
   }
 
   // Edit/ Update
-  UpdateAlbum(id: any): Observable<any> {
-    return this.httpClient.put(this.BaseUrl  + this.apiUrlTable + "/UpdateAlbum" , id).pipe(
+  UpdateSponser(id: any): Observable<any> {
+    return this.httpClient.put(this.BaseUrl  + this.apiUrlTable + "/UpdateSponser" , id).pipe(
       catchError(this.handleError)
     );
   }
 
   // Delete/ Remove
-  DeleteAlbum(id: any): Observable<any> {
-    return this.httpClient.delete(`${this.BaseUrl + this.apiUrlTable + "/DeleteAlbum"}/${id}`).pipe(
+  DeleteSponser(id: any): Observable<any> {
+    return this.httpClient.delete(`${this.BaseUrl + this.apiUrlTable + "/DeleteSponser"}/${id}`).pipe(
       catchError(this.handleError)
     );
   }

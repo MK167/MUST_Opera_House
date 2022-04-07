@@ -36,12 +36,16 @@ import { SliderComponent } from './Shared/Components/slider/slider.component';
 import { LoaderComponent } from './Shared/Loader/loader/loader.component';
 import { AboutUSComponent } from './Components/Pages/about-us/about-us.component';
 import { LightboxModule } from 'ngx-lightbox';
-import { ReactiveFormsModule } from '@angular/forms';
-import { HttpClient, HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { LoaderInterceptor } from './Interceptors/interceptors/loader-interceptor.service';
 import { LoaderService } from './Shared/Loader/LoaderServices/loader.service';
 import { ServicesComponent } from './Components/services/services.component';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatNativeDateModule } from '@angular/material/core';
+import {MatInputModule} from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -84,6 +88,11 @@ import { ServicesComponent } from './Components/services/services.component';
     NgxEditorModule,
     HttpClientModule,
     ReactiveFormsModule,
+    MatInputModule,
+    FormsModule,
+    MatDatepickerModule,
+    MatFormFieldModule,
+    MatNativeDateModule,
     LightboxModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production,

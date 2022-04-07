@@ -10,14 +10,15 @@
     <div class="wrap">
       <div class="content">
         <div class="row">
-          <a routerLink="/All-Images" class="set" *ngFor="let album of Albums">
-            <span class="layer one"><img src="../../../assets/MUST_Opera/G10.jpg" alt=""></span>
-            <span class="layer two"><img src="../../../assets/MUST_Opera/G11.jpg" alt=""></span>
+          <a [routerLink]="['/All-Images/'+album.albumID]"class="set" *ngFor="let album of Albums let i = index">
+            <span class="layer one"><img src="{{ImagePath}}{{album?.thubnail}}" alt=""></span>
+            <span class="layer two"><img src="{{ImagePath}}{{album?.thubnail}}" alt=""></span>
             <span class="layer three">{{album.title}}</span>
-            <img src="../../../assets/MUST_Opera/G12.jpg" alt="">
+            <img src="{{ImagePath}}{{album?.thubnail}}" alt="">
           </a>
         </div>
         </div>
     </div>
   </div>
 </section>
+

@@ -3,69 +3,26 @@
   <div class="title">
       <div class="">
           <h1 style="color: #fff;">Gallery</h1>
-          <p>MUST OPEAR HOUSE GALLERY DISCOVER US</p>
+          <p>{{title}}</p>
+          <p>{{description}}</p>
       </div>
   </div>
   <div id="image-gallery" class="row img_gallery">
-      <div class="col-8 banner_1">
-          <div class="row">
-              <div class="col">
-                  <a routerLink="/Image-Details" class="anim_border"></a>
-                  <a routerLink="/Image-Details" class="img_link"><img src="assets/MUST_Opera/G1.jpg" alt="Galler Image 1"></a>
-              </div>
-              <div class="col">
-                  <a routerLink="/Image-Details" class="anim_border"></a>
-                  <a routerLink="/Image-Details" class="img_link"><img src="assets/MUST_Opera/G10.jpg" alt="Galler Image 2"></a>
-              </div>
-          </div>
-          <div class="row">
-              <div class="col">
-                  <a routerLink="/Image-Details" class="anim_border"></a>
-                  <a routerLink="/Image-Details" class="img_link"><img src="assets/MUST_Opera/G15.jpg" alt="Galler Image 3"></a>
-              </div>
-          </div>
-          <div class="row">
-              <div class="col">
-                  <a routerLink="/Image-Details" class="anim_border" data-toggle="modal"></a>
-                  <a routerLink="/Image-Details" class="img_link"><img src="assets/MUST_Opera/G13.jpg" alt="Galler Image 4"></a>
-              </div>
-              <div class="col">
-                  <a routerLink="/Image-Details" class="anim_border" data-toggle="modal"></a>
-                  <a routerLink="/Image-Details" class="img_link"><img src="assets/MUST_Opera/G11.jpg" alt="Galler Image 5"></a>
-              </div>
-          </div>
-      </div>
-      <div class="col-4 banner_2">
-          <div class="row">
-              <div class="col">
-                  <a routerLink="/Image-Details" class="anim_border"></a>
-                  <a routerLink="/Image-Details" class="img_link"><img src="assets/MUST_Opera/G17.jpg" alt="Galler Image 6"></a>
-              </div>
-          </div>
-          <div class="row">
-              <div class="col">
-                  <a routerLink="/Image-Details" class="anim_border"></a>
-                  <a routerLink="/Image-Details" class="img_link"><img src="assets/MUST_Opera/G4.jpg" alt="Galler Image 7"></a>
-              </div>
-          </div>
-          <div class="row">
-              <div class="col">
-                  <a routerLink="/Image-Details" class="anim_border"></a>
-                  <a routerLink="/Image-Details" class="img_link"><img src="assets/MUST_Opera/G18.jpg" alt="Galler Image 8"></a>
-              </div>
-          </div>
-      </div>
-      <div id="popup-container">
-          <div class="popup_block" id="popup_block">
-              <div id="slides-container"></div>
-              <div class="popup_left popup_arrow">
-                  <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
-              </div>
-              <div class="popup_right popup_arrow">
-                  <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-              </div>
-          </div>
-          <ul></ul>
-      </div>
+    <div class="wrap">
+      <div class="content">
+        <div class="row">
+<div id="carousel" data-auto="true">
+  <div id="scene">
+    <img *ngFor="let item of AlbumDTO.images let i = index;" class="carousel_item" src="{{ImagePath}}{{item?.url}}" alt="">
+  </div>
+
+  <div id="carousel_btn">
+    <div class="btn prev">Prev</div>
+    <div class="btn next">Next</div>
+  </div>
+</div>
+    </div>
+    </div>
+    </div>
   </div>
 </section>

@@ -8,30 +8,92 @@
            </div>
         </div>
         <div class="col-md-12">
-           <form id="request" class="main_form">
+           <form id="request" class="main_form form-group" [formGroup]="AddWorkShop">
               <div class="row">
-                 <div class="col-md-12 ">
-                    <input class="contactus" placeholder="You Name" type="type" name="Name">
-                 </div>
-                 <div class="col-md-6">
-                    <input class="contactus" placeholder="Email" type="type" name="Email">
-                 </div>
-                 <div class="col-md-6">
-                    <input class="contactus" placeholder="Phone Number" type="type" name="Phone Number">
-                 </div>
                  <div class="col-md-12">
-                  <select class="contactus" placeholder="Choose your talent">
-                    <option>Choose your talent</option>
-                    <option>Sing</option>
-                    <option>Act</option>
+                    <input class="contactus" placeholder="Full Name" type="text" name="Name"
+                    formControlName = "Name" required>
+                    <div *ngIf="f['Name'].touched && f['Name'].invalid" class="alert alert-danger">
+                      <div *ngIf="f['Name'].errors && f['Name'].errors['required']"> **Name is required.</div>
+                      <div *ngIf="f['Name'].errors && f['Name'].errors['minlength']"> **Your Name have at least 3 character.</div>
+                  </div>
+                  </div>
+
+                 <div class="col-md-6 ">
+                    <input class="contactus" placeholder="Father Job" type="text" name="FatherJob"
+                    formControlName = "Fjob" required>
+                    <div *ngIf="f['Fjob'].touched && f['Fjob'].invalid" class="alert alert-danger">
+                      <div *ngIf="f['Fjob'].errors && f['Fjob'].errors['required']"> **Father Job is required.</div>
+                  </div>
+                 </div>
+
+                 <div class="col-md-6 ">
+                    <input class="contactus" placeholder="Age" type="number" name="Age"
+                    formControlName = "Age" required>
+                    <div *ngIf="f['Age'].touched && f['Age'].invalid" class="alert alert-danger">
+                      <div *ngIf="f['Age'].errors && f['Age'].errors['required']"> **Age is required.</div>
+                  </div>
+                 </div>
+
+                 <div class="col-md-6">
+                    <input class="contactus" placeholder="Email" type="email" name="Email"
+                    formControlName = "email" required>
+                    <div *ngIf="f['email'].touched && f['email'].invalid" class="alert alert-danger">
+                      <div *ngIf="f['email'].errors && f['email'].errors['required']"> **Email is required.</div>
+                  </div>
+                 </div>
+
+                 <div class="col-md-6">
+                    <input class="contactus" placeholder="Phone Number" type="text" name="Phone Number" required
+                    formControlName = "Phone">
+                    <div *ngIf="f['Phone'].touched && f['Phone'].invalid" class="alert alert-danger">
+                      <div *ngIf="f['Phone'].errors && f['Phone'].errors['required']"> **Phone is required.</div>
+                  </div>
+                 </div>
+
+                 <div class="col-md-6">
+                  <select class="contactus" placeholder = "--Choose your Workshop--" required
+                  formControlName = "Talent">
+                  <option value="" disabled selected>Select your Workshop</option>
+                  <option *ngFor="let item of WorkshopDTO" [value]="item.workshopID">
+                      {{ item.title }}
                   </select>
+                  <div *ngIf="f['Talent'].touched && f['Talent'].invalid" class="alert alert-danger">
+                    <div *ngIf="f['Talent'].errors && f['Talent'].errors['required']"> **Workshop is required.</div>
                 </div>
+                </div>
+
+                 <div class="col-md-6">
+                   <div class="input-group contactus">
+                  <mat-form-field class="contactus" appearance="fill">
+                    <input matInput [matDatepicker]="picker" formControlName="DOB" required>
+                    <mat-datepicker-toggle  matSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                  </mat-form-field>
+                </div>
+                  <!-- <div class="input-group contactus">
+                    <input class="form-control mt-3"  style="background-color: transparent;" placeholder="yyyy-mm-dd"
+                           name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker" required
+                           formControlName="DOB">
+                    <button style="border: none;" class="btn btn-outline-secondary calendar" (click)="d.toggle()" type="button"></button>
+                  </div> -->
+                  <div *ngIf="f['DOB'].touched && f['DOB'].invalid" class="alert alert-danger">
+                    <div *ngIf="f['DOB'].errors && f['DOB'].errors['required']"> **Date of Birth is required.</div>
+                </div>
+                </div>
+
                  <div class="col-md-12">
-                    <textarea class="textarea" placeholder="Message" type="Message"></textarea>
+                    <textarea class="textarea" placeholder="Pervious Experience (Optional) " type="text"
+                    formControlName = "PEX"></textarea>
+                    <div *ngIf="f['PEX'].touched && f['PEX'].invalid" class="alert alert-danger">
+                      <div *ngIf="f['PEX'].errors && f['PEX'].errors['required']"> **Workshop is required.</div>
+                  </div>
                  </div>
+
                  <div class="col-md-12">
-                    <button class="send_btn">Send</button>
+                    <button class="send_btn submit" type="submit" [disabled]="AddWorkShop.invalid" (click)="saveData()">Submit</button>
                  </div>
+
               </div>
            </form>
         </div>

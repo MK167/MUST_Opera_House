@@ -30,7 +30,7 @@ const routes: Routes = [
 
   //Gallery
   {
-    path: 'All-Images', component: AllGalleryComponent
+    path: 'All-Images/:id', component: AllGalleryComponent
   },
   {
     path: 'Image-Details', component: GalleryDetailsComponent

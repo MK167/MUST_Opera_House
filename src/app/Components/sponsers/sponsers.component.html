@@ -10,56 +10,15 @@
      </div>
      <div class="row d_flex">
         <div class="col-md-10 offset-md-1">
-           <div id="testimo" class="carousel slide our_testimonial" data-ride="carousel">
-              <ol class="carousel-indicators">
-                 <li data-target="#testimo" data-slide-to="0" class="active"></li>
-                 <li data-target="#testimo" data-slide-to="1"></li>
-                 <li data-target="#testimo" data-slide-to="2"></li>
-              </ol>
-              <div class="carousel-inner">
-                 <div class="carousel-item active">
-                    <div class="container">
-                       <div class="carousel-caption posi_in">
-                          <div class="testomoniam_text">
-                             <i class="text_align_left d-block"><img  src="assets/MUST_Opera/anghami-logo-colored.png" style="width: 250px; display: block; margin-left: auto; margin-right: auto;" alt="#"/></i>
-                             <!-- <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure</p> -->
-                             <!-- <i class="text_align_right d-block"><img  src="assets/Assets/images/icon_right.png" alt="#"/></i> -->
-                          </div>
-                       </div>
-                    </div>
-                 </div>
-                 <div class="carousel-item">
-                    <div class="container">
-                       <div class="carousel-caption posi_in">
-                          <div class="testomoniam_text">
-                             <i class="text_align_left d-block"><img  src="assets/MUST_Opera/must-logo.svg" style="width: 150px; display: block; margin-left: auto; margin-right: auto;" alt="#"/></i>
-                             <!-- <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure</p> -->
-                             <!-- <i class="text_align_right d-block"><img  src="assets/Assets/images/icon_right.png" alt="#"/></i> -->
-                          </div>
-                       </div>
-                    </div>
-                 </div>
-                 <div class="carousel-item">
-                    <div class="container">
-                       <div class="carousel-caption posi_in">
-                          <div class="testomoniam_text">
-                             <i class="text_align_left d-block"><img  src="assets/MUST_Opera/opera.png"  style="width: 150px; display: block; margin-left: auto; margin-right: auto;" alt="#"/></i>
-                             <!-- <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure</p> -->
-                             <!-- <i class="text_align_right d-block"><img  src="assets/Assets/images/icon_right.png" alt="#"/></i> -->
-                          </div>
-                       </div>
-                    </div>
-                 </div>
+          <div class="sponsor-slider-wrapper">
+            <div class="sponsor-slider slide-1">
+              <div class="item" *ngFor="let item of Sponser">
+                <a href="#">
+                  <img src="{{ImagePath}}/{{item?.logoURL}}" alt="img"/>
+                </a>
               </div>
-              <a class="carousel-control-prev" href="#testimo" role="button" data-slide="prev">
-              <i class="fa fa-angle-left" aria-hidden="true"></i>
-              <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#testimo" role="button" data-slide="next">
-              <i class="fa fa-angle-right" aria-hidden="true"></i>
-              <span class="sr-only">Next</span>
-              </a>
-           </div>
+            </div>
+          </div>
         </div>
      </div>
   </div>

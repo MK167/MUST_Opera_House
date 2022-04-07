@@ -6,10 +6,10 @@ import { environment } from 'src/environments/environment';
 @Injectable({
   providedIn: 'root'
 })
-export class AlbumService {
+export class WorkshopFormService {
 
   readonly BaseUrl = environment.BaseUrl;
-  apiUrlTable: string = 'Album';
+  apiUrlTable: string = 'WorkshopApplication';
 
   headers = new HttpHeaders().set('Content-Type', 'application/json');
 
@@ -17,13 +17,7 @@ export class AlbumService {
 
   //Get All
   GetAll() : Observable<any> {
-    return this.httpClient.get(this.BaseUrl + this.apiUrlTable+ "/GetAllAlbum")
-    .pipe(
-      catchError(this.handleError)
-    );
-  }
-  GetAllAlbumWithImages() : Observable<any> {
-    return this.httpClient.get(this.BaseUrl + this.apiUrlTable+ "/GetAllAlbumWithImages")
+    return this.httpClient.get(this.BaseUrl + this.apiUrlTable+ "/GetAllWorkshopApplication")
     .pipe(
       catchError(this.handleError)
     );
@@ -31,33 +25,28 @@ export class AlbumService {
 
   //Get by ID
   GetByID(id: any): Observable<any> {
-    return this.httpClient.get(`${this.BaseUrl + this.apiUrlTable + "/GetAlbumWithImagesByID"}/${id}`).pipe(
-      catchError(this.handleError)
-    );
-  }
-  GetImageByID(id: any): Observable<any> {
-    return this.httpClient.get(`${this.BaseUrl + this.apiUrlTable + "/GetAlbumByID"}/${id}`).pipe(
+    return this.httpClient.get(`${this.BaseUrl + this.apiUrlTable + "/GetWorkshopApplicationByID"}/${id}`).pipe(
       catchError(this.handleError)
     );
   }
 
   //Create / Add
   Create(data: any): Observable<any> {
-    return this.httpClient.post(this.BaseUrl  + this.apiUrlTable + "/AddAlbum" , data).pipe(
+    return this.httpClient.post(this.BaseUrl  + this.apiUrlTable + "/AddWorkshopApplication" , data).pipe(
       catchError(this.handleError)
     );
   }
 
   // Edit/ Update
-  UpdateAlbum(id: any): Observable<any> {
-    return this.httpClient.put(this.BaseUrl  + this.apiUrlTable + "/UpdateAlbum" , id).pipe(
+  UpdateWorkshopApplication(id: any): Observable<any> {
+    return this.httpClient.put(this.BaseUrl  + this.apiUrlTable + "/UpdateWorkshopApplication" , id).pipe(
       catchError(this.handleError)
     );
   }
 
   // Delete/ Remove
-  DeleteAlbum(id: any): Observable<any> {
-    return this.httpClient.delete(`${this.BaseUrl + this.apiUrlTable + "/DeleteAlbum"}/${id}`).pipe(
+  DeleteWorkshopApplication(id: any): Observable<any> {
+    return this.httpClient.delete(`${this.BaseUrl + this.apiUrlTable + "/DeleteWorkshopApplication"}/${id}`).pipe(
       catchError(this.handleError)
     );
   }
