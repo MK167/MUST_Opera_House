@@ -10,8 +10,6 @@ export const environment = {
   ImagePathUrlNews: 'http://127.0.0.1:8887/News/Uploads/', // Image path in Localhost
   ImagePathUrlSponosr: 'http://127.0.0.1:8887/Sponser/Uploads/', // Image path in Localhost
   ImagePathUrlAlbum: 'http://127.0.0.1:8887/Album/Uploads/', // Image path in Localhost
-
-
   ImagePathUsersUrl: 'https://addmission.must.edu.eg/OperaImages/UserAvatar/', // Image path in Localhost
 };
 

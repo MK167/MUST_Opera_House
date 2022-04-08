@@ -22,7 +22,7 @@ export class ContactComponent implements OnInit {
   //
   name: string;
   phone: string;
-  age: number;
+  age: any;
   dateOfBirth: string;
   fatherJob: string;
   address: string;
@@ -39,7 +39,7 @@ export class ContactComponent implements OnInit {
     if (data == null) {
       this.name = '';
       this.phone = '';
-      this.age = 0;
+      this.age = '';
       this.dateOfBirth = '';
       this.fatherJob = '';
       this.address = '';

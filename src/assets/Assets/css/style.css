@@ -692,7 +692,14 @@ ul.email li a i {
      font-weight: 500;
      margin: 0 auto;
 }
+.main_form .send_btn:disabled,
+button[disabled]{
+  border: 1px solid #002E5c;
+  background-color: #002E5c;
+  color: #fff;
+  cursor: not-allowed;
 
+}
 .main_form .send_btn:hover {
      background-color: #002E5c;
      transition: ease-in all 0.5s;

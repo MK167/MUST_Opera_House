@@ -4,6 +4,7 @@
         <div class="col-md-12">
            <div class="titlepage text_align_left">
               <h2>GET IN OUR TEAM.</h2>
+              <p>Fill the Form.</p>
               <!-- <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or raThere are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or raThere are many variations of passages of Lorem      </p> -->
            </div>
         </div>
@@ -11,7 +12,7 @@
            <form id="request" class="main_form form-group" [formGroup]="AddWorkShop">
               <div class="row">
                  <div class="col-md-12">
-                    <input class="contactus" placeholder="Full Name" type="text" name="Name"
+                    <input class="contactus" placeholder="Enter Your Full Name" type="text" name="Name"
                     formControlName = "Name" required>
                     <div *ngIf="f['Name'].touched && f['Name'].invalid" class="alert alert-danger">
                       <div *ngIf="f['Name'].errors && f['Name'].errors['required']"> **Name is required.</div>
@@ -20,7 +21,7 @@
                   </div>
 
                  <div class="col-md-6 ">
-                    <input class="contactus" placeholder="Father Job" type="text" name="FatherJob"
+                    <input class="contactus" placeholder="Enter Your Father Job" type="text" name="FatherJob"
                     formControlName = "Fjob" required>
                     <div *ngIf="f['Fjob'].touched && f['Fjob'].invalid" class="alert alert-danger">
                       <div *ngIf="f['Fjob'].errors && f['Fjob'].errors['required']"> **Father Job is required.</div>
@@ -28,7 +29,7 @@
                  </div>
 
                  <div class="col-md-6 ">
-                    <input class="contactus" placeholder="Age" type="number" name="Age"
+                    <input class="contactus" placeholder="Enter your Age" name="Age"
                     formControlName = "Age" required>
                     <div *ngIf="f['Age'].touched && f['Age'].invalid" class="alert alert-danger">
                       <div *ngIf="f['Age'].errors && f['Age'].errors['required']"> **Age is required.</div>
@@ -36,7 +37,7 @@
                  </div>
 
                  <div class="col-md-6">
-                    <input class="contactus" placeholder="Email" type="email" name="Email"
+                    <input class="contactus" placeholder="Enter Your Email" type="email" name="Email"
                     formControlName = "email" required>
                     <div *ngIf="f['email'].touched && f['email'].invalid" class="alert alert-danger">
                       <div *ngIf="f['email'].errors && f['email'].errors['required']"> **Email is required.</div>
@@ -44,7 +45,7 @@
                  </div>
 
                  <div class="col-md-6">
-                    <input class="contactus" placeholder="Phone Number" type="text" name="Phone Number" required
+                    <input class="contactus" placeholder="Enter Your Phone Number" type="text" name="Phone Number" required
                     formControlName = "Phone">
                     <div *ngIf="f['Phone'].touched && f['Phone'].invalid" class="alert alert-danger">
                       <div *ngIf="f['Phone'].errors && f['Phone'].errors['required']"> **Phone is required.</div>
@@ -66,7 +67,7 @@
                  <div class="col-md-6">
                    <div class="input-group contactus">
                   <mat-form-field class="contactus" appearance="fill">
-                    <input matInput [matDatepicker]="picker" formControlName="DOB" required>
+                    <input matInput [matDatepicker]="picker" placeholder="Enter Your Date Of Birth" formControlName="DOB" required>
                     <mat-datepicker-toggle  matSuffix [for]="picker"></mat-datepicker-toggle>
                     <mat-datepicker #picker></mat-datepicker>
                   </mat-form-field>
@@ -83,7 +84,7 @@
                 </div>
 
                  <div class="col-md-12">
-                    <textarea class="textarea" placeholder="Pervious Experience (Optional) " type="text"
+                    <textarea class="textarea" placeholder="Enter Your Pervious Experience (Optional) " type="text"
                     formControlName = "PEX"></textarea>
                     <div *ngIf="f['PEX'].touched && f['PEX'].invalid" class="alert alert-danger">
                       <div *ngIf="f['PEX'].errors && f['PEX'].errors['required']"> **Workshop is required.</div>
