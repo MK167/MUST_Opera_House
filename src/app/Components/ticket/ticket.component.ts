@@ -11,7 +11,6 @@ export class TicketComponent implements OnInit {
   TicketsDTO: TicketDTO [] = [];
   eventTitle!: string;
   eventDate!: string;
-  speakerName!: string;
   ActionDate!: any;
 
   constructor(private TicketService: TicketService) { }
@@ -24,9 +23,10 @@ export class TicketComponent implements OnInit {
 
   GetData()
   {
-    this.TicketService.RetrieveAllEvents().subscribe(data =>
+    this.TicketService.GetAll().subscribe((data) =>
       {
       this.TicketsDTO = data;
+      console.log(data);
       this.eventDate = data[0].eventDate;
       }
     );

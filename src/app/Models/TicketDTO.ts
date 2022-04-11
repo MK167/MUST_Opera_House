@@ -1,9 +1,9 @@
 export interface TicketDTO {
-  eventSpeakerID: string;
   eventID: string;
-  eventTitle: string;
-  description: string;
-  eventDate: string;
-  speakerID: string;
-  speakerName: string;
+  title: string;
+  description: string; //URL Website TEMP
+  image: string;
+  strDate: string;
+  endDate: string;
+  calendar: string;
 }
